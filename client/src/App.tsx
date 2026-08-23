@@ -65,6 +65,7 @@ function Counter({ value, suffix, delay, duration }: { value: number, suffix: st
 }
 
 function App() {
+  const isNavigating = useRef(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeRole, setActiveRole] = useState(0);
   const [activeNav, setActiveNav] = useState('Home');
@@ -169,6 +170,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (isNavigating.current) return;
       const sectionElements = document.querySelectorAll('section');
       let currentNav = '';
 
@@ -179,11 +181,15 @@ function App() {
           const match = ['Home', 'Skills', 'Experience', 'Projects', 'Contact'].find(
             item => item.toLowerCase() === id
           );
-          currentNav = match || '';
+          if (match) {
+            currentNav = match;
+          }
         }
       });
 
-      setActiveNav(currentNav);
+      if (currentNav) {
+        setActiveNav(currentNav);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -209,6 +215,10 @@ function App() {
           {/* Logo */}
           <button
             onClick={() => {
+              isNavigating.current = true;
+              setTimeout(() => { isNavigating.current = false; }, 1000);
+              setActiveNav('Home');
+
               if (currentView !== 'main') {
                 setCurrentView('main');
                 setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
@@ -228,6 +238,9 @@ function App() {
                 key={item}
                 href={item === 'Experience' ? '#' : `#${item.toLowerCase()}`}
                 onClick={(e) => {
+                  isNavigating.current = true;
+                  setTimeout(() => { isNavigating.current = false; }, 1000);
+
                   if (item === 'Experience') {
                     e.preventDefault();
                     setCurrentView('experience');
@@ -236,6 +249,7 @@ function App() {
                   } else {
                     if (currentView !== 'main') {
                       setCurrentView('main');
+                      setActiveNav(item);
                       setTimeout(() => {
                         document.getElementById(item.toLowerCase())?.scrollIntoView({ behavior: 'smooth' });
                       }, 50);
