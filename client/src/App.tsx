@@ -568,7 +568,7 @@ function App() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {filteredProjects.map((project, i) => (
+              {filteredProjects.map((project) => (
                 <div key={project.id} className={`group relative rounded-3xl overflow-hidden border border-white/10 bg-black/50 hover:border-white/30 transition-all duration-500 ${project.featured ? 'md:col-span-2' : ''}`}>
                   <div className={`relative w-full ${project.featured ? 'h-[400px]' : 'h-[250px]'} overflow-hidden`}>
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
@@ -724,16 +724,48 @@ function App() {
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                           <div>
-                            <h3 className="text-2xl font-display text-white mb-1">Hackathon Winner</h3>
-                            <p className="text-muted">Hackathon Name</p>
+                            <h3 className="text-2xl font-display text-white mb-1">INFERNOVERSE 24 HOUR HACKATHON</h3>
+                            <p className="text-muted">GeeksforGeeks & HiDevs</p>
                           </div>
-                          <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">2023</span>
+                          <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">2025</span>
                         </div>
-                        <ul className="space-y-3 text-[#d0d0d0] list-disc list-inside">
-                          <li>Built a fully functional product in 48 hours.</li>
-                          <li>Secured 1st place among hundreds of participants.</li>
-                          <li>(Update this with your real hackathon wins!)</li>
-                        </ul>
+                        
+                        <div className="space-y-6">
+                          <div>
+                            <h4 className="text-white font-medium mb-3 flex items-center gap-2">
+                              <i className="fa-solid fa-bolt text-[#ff7e5f]"></i>
+                              Key Moments
+                            </h4>
+                            <ul className="space-y-2 text-[#d0d0d0] list-disc list-inside text-sm sm:text-base">
+                              <li>Built a fully functional product in a 24-hour time constraint.</li>
+                              <li>Contributed to advancing the spirit of innovation.</li>
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h4 className="text-white font-medium mb-3 flex items-center gap-2">
+                              <i className="fa-solid fa-trophy text-[#ff7e5f]"></i>
+                              Achievement
+                            </h4>
+                            <p className="text-sm sm:text-base text-[#d0d0d0]">Successfully participated in the hackathon conducted by Student Organization Inferno in association with GFG LPU and powered by HiDevs.</p>
+                          </div>
+
+                          {/* Certificates */}
+                          <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                            <div className="inline-flex items-center justify-between sm:justify-start gap-4 p-2 pr-2 pl-5 rounded-full bg-white/5 border border-white/10 w-full sm:w-auto transition-colors hover:bg-white/10 hover:border-white/20">
+                              <span className="text-sm font-medium text-white/90 whitespace-nowrap">GeeksforGeeks Certificate</span>
+                              <a href="/GFG+Infernoverse Hackathon.png" target="_blank" rel="noreferrer" className="bg-[#ff7e5f] text-white text-xs px-5 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#ff6a4a] hover:-translate-y-[1px] hover:shadow-[0_4px_12px_rgba(255,126,95,0.3)] transition-all shrink-0">
+                                Click Here
+                              </a>
+                            </div>
+                            <div className="inline-flex items-center justify-between sm:justify-start gap-4 p-2 pr-2 pl-5 rounded-full bg-white/5 border border-white/10 w-full sm:w-auto transition-colors hover:bg-white/10 hover:border-white/20">
+                              <span className="text-sm font-medium text-white/90 whitespace-nowrap">HiDevs Certificate</span>
+                              <a href="/HiDevs+Infernoverse Hackathon.png" target="_blank" rel="noreferrer" className="bg-[#ff7e5f] text-white text-xs px-5 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#ff6a4a] hover:-translate-y-[1px] hover:shadow-[0_4px_12px_rgba(255,126,95,0.3)] transition-all shrink-0">
+                                Click Here
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   )}
