@@ -147,7 +147,8 @@ function App() {
         console.warn('Public LeetCode API failed, falling back to local server...', err);
         try {
           // Fallback to our own server proxy
-          const fallbackRes = await fetch('/api/leetcode/biswa_17');
+          const backendUrl = import.meta.env.VITE_API_URL || 'https://portfolio-backend-99dj.onrender.com';
+          const fallbackRes = await fetch(`${backendUrl}/api/leetcode/biswa_17`);
           const fallbackData = await fallbackRes.json();
           if (fallbackData && fallbackData.easySolved !== undefined) {
             setLeetcodeData({ easy: fallbackData.easySolved, medium: fallbackData.mediumSolved, hard: fallbackData.hardSolved });
