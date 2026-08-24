@@ -756,7 +756,7 @@ function App() {
                               <i className="fa-solid fa-trophy text-[#ff7e5f]"></i>
                               Achievement
                             </h4>
-                            <p className="text-sm sm:text-base text-[#d0d0d0]">Secured a spot in the Top 15 teams among all participants across the nation.</p>
+                            <p className="text-sm sm:text-base text-[#d0d0d0]">Secured a spot in the Top 15 teams among participants from 30+ universities.</p>
                           </div>
 
                           {/* Certificates */}
