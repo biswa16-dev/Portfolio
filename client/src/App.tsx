@@ -741,10 +741,6 @@ function App() {
                           </div>
 
                           <div>
-                            <h4 className="text-white font-medium mb-3 flex items-center gap-2">
-                              <i className="fa-solid fa-bolt text-[#ff7e5f]"></i>
-                              Key Moments
-                            </h4>
                             <ul className="space-y-2 text-[#d0d0d0] list-disc list-inside text-sm sm:text-base">
                               <li>24 hours of intensive hackathon coding.</li>
                               <li>8 hours of dedicated mentorship from industry experts.</li>
@@ -783,10 +779,6 @@ function App() {
                         
                         <div className="space-y-6">
                           <div>
-                            <h4 className="text-white font-medium mb-3 flex items-center gap-2">
-                              <i className="fa-solid fa-bolt text-[#ff7e5f]"></i>
-                              Key Moments
-                            </h4>
                             <ul className="space-y-2 text-[#d0d0d0] list-disc list-inside text-sm sm:text-base">
                               <li>Built a fully functional product in a 24-hour time constraint.</li>
                               <li>Contributed to advancing the spirit of innovation.</li>
