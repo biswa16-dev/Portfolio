@@ -462,11 +462,12 @@ function App() {
                 { name: 'PostgreSQL', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg', category: 'Database' },
                 { name: 'MySQL', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg', category: 'Database' },
                 { name: 'Next.js', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg', category: 'Frontend', extraClasses: 'bg-white rounded-full' },
+                { name: 'Firebase', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg', category: 'Backend' },
                 { name: 'Express.js', imgUrl: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23333333'/%3E%3Ctext x='50' y='68' font-family='Arial, sans-serif' font-size='55' font-weight='bold' fill='white' text-anchor='middle' letter-spacing='-2'%3Eex%3C/text%3E%3C/svg%3E", category: 'Framework' },
                 { name: 'Tailwind CSS', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg', category: 'Framework' },
                 { name: 'FastAPI', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg', category: 'Backend' },
                 { name: 'PyTorch', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg', category: 'AI / ML' },
-                { name: 'GitHub', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: 'Tools', extraClasses: 'bg-white rounded-full' },
+                { name: 'GitHub', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: 'Tools', extraClasses: 'invert' },
                 { name: 'Linux', imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg', category: 'OS' }
               ].map((skill) => (
                 <div key={skill.name} className="group relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 cursor-pointer flex flex-col items-center gap-4 hover:-translate-y-1 overflow-hidden">
@@ -474,7 +475,7 @@ function App() {
                   <img
                     src={skill.imgUrl}
                     alt={skill.name}
-                    className={`w-9 h-9 z-10 transition-all duration-300 opacity-50 grayscale brightness-[2] group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 ${skill.extraClasses || ''}`}
+                    className={`w-9 h-9 z-10 transition-all duration-300 ${skill.extraClasses || ''}`}
                   />
                   <div className="flex flex-col items-center text-center z-10">
                     <span className="font-medium text-white/90 group-hover:text-white transition-colors duration-300">{skill.name}</span>
