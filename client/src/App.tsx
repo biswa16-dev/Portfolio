@@ -727,12 +727,19 @@ function App() {
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                           <div>
                             <h3 className="text-2xl font-display text-white mb-1">Code-A-Haunt 3.0</h3>
-                            <p className="text-muted">National-Level Inter-University Hackathon</p>
+                            <p className="text-muted">Coding Blocks</p>
                           </div>
                           <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">2026</span>
                         </div>
                         
                         <div className="space-y-6">
+                          <div>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-200/90 text-sm font-medium">
+                              <i className="fa-solid fa-star text-yellow-400"></i>
+                              <span>National-Level Inter-University Hackathon</span>
+                            </div>
+                          </div>
+
                           <div>
                             <h4 className="text-white font-medium mb-3 flex items-center gap-2">
                               <i className="fa-solid fa-bolt text-[#ff7e5f]"></i>
