@@ -762,7 +762,7 @@ function App() {
                           {/* Certificates */}
                           <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2">
                             <div className="inline-flex items-center justify-between sm:justify-start gap-4 p-2 pr-2 pl-5 rounded-full bg-white/5 border border-white/10 w-full sm:w-auto transition-colors hover:bg-white/10 hover:border-white/20">
-                              <span className="text-sm font-medium text-white/90 whitespace-nowrap">Participation</span>
+                              <span className="text-sm font-medium text-white/90 whitespace-nowrap">Certificate</span>
                               <a href="/CodeAHaunt_Participation.png" target="_blank" rel="noreferrer" className="bg-[#ff7e5f] text-white text-xs px-5 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#ff6a4a] hover:-translate-y-[1px] hover:shadow-[0_4px_12px_rgba(255,126,95,0.3)] transition-all shrink-0">
                                 Click Here
                               </a>
