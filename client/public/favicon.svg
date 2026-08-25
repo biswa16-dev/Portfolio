@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
   <circle cx="10" cy="10" r="10" fill="black" />
-  <g fill="white" transform="translate(4.5, 6.5)">
+  <g fill="white" transform="translate(3.4, 5.8) scale(1.2)">
     <g stroke="black" stroke-width="0.15">
       <!-- B -->
       <!-- Row 0 -->
