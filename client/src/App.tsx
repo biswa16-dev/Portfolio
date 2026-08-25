@@ -768,7 +768,7 @@ function App() {
                             <h3 className="text-2xl font-display text-white mb-1">Code-A-Haunt 3.0</h3>
                             <p className="text-muted">Coding Blocks</p>
                           </div>
-                          <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">2026</span>
+                          <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">March 2026</span>
                         </div>
                         
                         <div className="space-y-6">
@@ -813,7 +813,7 @@ function App() {
                             <h3 className="text-2xl font-display text-white mb-1">INFERNOVERSE 24 HOUR HACKATHON</h3>
                             <p className="text-muted">GeeksforGeeks & HiDevs</p>
                           </div>
-                          <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">2025</span>
+                          <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">December 2025</span>
                         </div>
                         
                         <div className="space-y-6">
