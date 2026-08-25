@@ -33,7 +33,6 @@ This project is structured as a full-stack application.
 - Vite (Build Tool)
 - Tailwind CSS (Styling)
 - Framer Motion (Animations)
-- Firebase Hosting (Deployment)
 
 **Backend (`/server`)**
 - Node.js + Express.js
