@@ -201,7 +201,7 @@ function App() {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
+    link.href = '/CV.pdf';
     link.download = 'Biswajit-Nayak-Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -672,7 +672,7 @@ function App() {
                     onClick={() => setActiveExperienceTab('Professional')}
                     className={`font-display text-2xl tracking-wider px-4 py-2 transition-colors relative ${activeExperienceTab === 'Professional' ? 'text-white' : 'text-muted hover:text-white'}`}
                   >
-                    Professional Experience
+                    Work Experience
                     {activeExperienceTab === 'Professional' && (
                       <span className="absolute -bottom-[17px] left-0 w-full h-[2px] bg-white rounded-t-full"></span>
                     )}
