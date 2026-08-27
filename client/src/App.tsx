@@ -123,7 +123,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch('https://api.github.com/users/biswa1601nk-hub')
+    fetch('https://api.github.com/users/biswa16-dev')
       .then(res => res.json())
       .then(data => {
         if (data.public_repos !== undefined) {
@@ -500,7 +500,7 @@ function App() {
                   <i className="fa-brands fa-github text-4xl text-white"></i>
                   <div>
                     <h3 className="text-xl font-medium text-white">GitHub</h3>
-                    <p className="text-muted text-sm">@biswa1601nk-hub</p>
+                    <p className="text-muted text-sm">@biswa16-dev</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4 mt-auto">
@@ -513,7 +513,7 @@ function App() {
                     <p className="text-2xl font-display text-white">{githubData.contributions}</p>
                   </div>
                 </div>
-                <a href="https://github.com/biswa1601nk-hub" target="_blank" rel="noreferrer" className="mt-6 flex items-center justify-center gap-2 text-sm text-white/70 hover:text-white transition-colors py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10">
+                <a href="https://github.com/biswa16-dev" target="_blank" rel="noreferrer" className="mt-6 flex items-center justify-center gap-2 text-sm text-white/70 hover:text-white transition-colors py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10">
                   View Profile <i className="fa-solid fa-arrow-right text-xs"></i>
                 </a>
               </div>
@@ -868,7 +868,7 @@ function App() {
             </div>
 
             <div className="flex items-center gap-6 text-muted">
-              <a href="https://github.com/biswa1601nk-hub" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+              <a href="https://github.com/biswa16-dev" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
                 <i className="fa-brands fa-github text-lg"></i>
               </a>
               <a href="https://www.linkedin.com/in/nayak08/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">

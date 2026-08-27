@@ -16,7 +16,7 @@ export const projects = [
     technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Tailwind CSS', 'ESP32'],
     image: '/cover.png',
     featured: true,
-    github: 'https://github.com/biswa1601nk-hub/EmoSync',
+    github: 'https://github.com/biswa16-dev/EmoSync',
     live: 'https://emo-sync-mu.vercel.app'
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
     description: 'Decentralized News Verification Portal.',
     technologies: ['JavaScript', 'Node.js', 'HTML', 'Vanilla CSS'],
     image: '/truvix_cover.png',
-    github: 'https://github.com/biswa1601nk-hub/Truvix',
+    github: 'https://github.com/biswa16-dev/Truvix',
     live: 'https://truvix-pi.vercel.app/'
   }
 ];

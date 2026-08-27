@@ -63,7 +63,7 @@ If you want to run this project locally, follow the steps below.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/biswa1601nk-hub/Portfolio.git
+git clone https://github.com/biswa16-dev/Portfolio.git
 cd Portfolio
 ```
 
@@ -95,7 +95,7 @@ The backend API will run on `http://localhost:5000` (or whichever port is define
 
 ## 🤝 Let's Connect
 
-Feel free to reach out to me via the contact form on my website or check out my [GitHub Profile](https://github.com/biswa1601nk-hub) for more projects!
+Feel free to reach out to me via the contact form on my website or check out my [GitHub Profile](https://github.com/biswa16-dev) for more projects!
 
 ---
 *Crafted with passion by Biswajit Nayak.*
