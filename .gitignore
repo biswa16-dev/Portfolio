@@ -134,3 +134,6 @@ Thumbs.db
 test_proxy.js
 test_leetcode.js
 test_leetcode2.js
+
+# Firebase
+.firebase/
