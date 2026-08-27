@@ -201,7 +201,7 @@ function App() {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/CV.pdf';
+    link.href = '/professional CV.pdf';
     link.download = 'Biswajit-Nayak-Resume.pdf';
     document.body.appendChild(link);
     link.click();
