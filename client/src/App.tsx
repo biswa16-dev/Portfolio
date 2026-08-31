@@ -726,8 +726,12 @@ function App() {
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                           <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-xl shrink-0 shadow-lg bg-[#ff0000] flex items-center justify-center">
-                              <i className="fa-brands fa-adobe text-white text-[28px]"></i>
+                            <div className="w-12 h-12 rounded-xl shrink-0 shadow-lg border border-white/10 bg-[#FF0000] flex items-center justify-center overflow-hidden p-2.5">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 80" className="w-full h-full fill-white">
+                                <path d="M56.9686 0H90.4318V80L56.9686 0Z" />
+                                <path d="M33.4632 0H0V80L33.4632 0Z" />
+                                <path d="M45.2159 30.1388L58.2635 60.2776H71.3111L45.2159 0L19.1207 60.2776H32.1683L45.2159 30.1388Z" />
+                              </svg>
                             </div>
                             <div>
                               <h3 className="text-2xl font-display text-white mb-1">Adobe University Hackathon</h3>
