@@ -726,8 +726,8 @@ function App() {
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                           <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0 shadow-lg border border-white/10 bg-white flex items-center justify-center">
-                              <img src="/adobe.png" alt="Adobe Logo" className="w-full h-full object-contain" />
+                            <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/10 bg-[#FF0000] flex items-center justify-center">
+                              <img src="/adobe.png" alt="Adobe Logo" className="w-full h-full object-contain scale-110" />
                             </div>
                             <div>
                               <h3 className="text-2xl font-display text-white mb-1">Adobe University Hackathon</h3>
