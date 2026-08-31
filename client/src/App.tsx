@@ -814,7 +814,7 @@ function App() {
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                           <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/10 bg-white flex items-center justify-center p-1.5">
-                              <img src="/codingblocks-official.png" alt="Coding Blocks Logo" className="w-full h-full object-contain" />
+                              <img src="/codingblocks-official.png" alt="Coding Blocks Logo" className="w-full h-full object-contain scale-[1.2]" />
                             </div>
                             <div>
                               <h3 className="text-2xl font-display text-white mb-1">Code-A-Haunt 3.0</h3>
