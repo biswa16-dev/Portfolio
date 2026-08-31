@@ -69,7 +69,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeRole, setActiveRole] = useState(0);
   const [activeNav, setActiveNav] = useState('Home');
-  const [githubData, setGithubData] = useState({ repos: 42, contributions: '158' });
+  const [githubData, setGithubData] = useState({ repos: 42, contributions: '187' });
   const [leetcodeData, setLeetcodeData] = useState({ easy: 120, medium: 45, hard: 12 });
   const [activeProjectFilter, setActiveProjectFilter] = useState('All');
   const [activeExperienceTab, setActiveExperienceTab] = useState<'Professional' | 'Hackathons'>('Professional');
