@@ -722,6 +722,44 @@ function App() {
                     </div>
                   ) : (
                     <div className="space-y-6">
+                      {/* Adobe University Hackathon */}
+                      <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
+                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                          <div>
+                            <h3 className="text-2xl font-display text-white mb-1">Adobe University Hackathon</h3>
+                            <p className="text-muted">Adobe</p>
+                          </div>
+                          <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">August 2026</span>
+                        </div>
+                        
+                        <div className="space-y-6">
+                          <div>
+                            <ul className="space-y-2 text-[#d0d0d0] list-disc list-inside text-sm sm:text-base">
+                              <li>Collaborated in an intensive hackathon environment to build innovative technical solutions.</li>
+                              <li>Demonstrated strong problem-solving skills and the ability to deliver results under a tight deadline.</li>
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h4 className="text-white font-medium mb-3 flex items-center gap-2">
+                              <i className="fa-solid fa-trophy text-[#ff7e5f]"></i>
+                              Achievement
+                            </h4>
+                            <p className="text-sm sm:text-base text-[#d0d0d0]">Successfully participated in the Adobe University Hackathon, gaining valuable hands-on experience in tackling real-world challenges.</p>
+                          </div>
+
+                          {/* Certificates */}
+                          <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2">
+                            <div className="inline-flex items-center justify-between sm:justify-start gap-4 p-2 pr-2 pl-5 rounded-full bg-white/5 border border-white/10 w-full sm:w-auto transition-colors hover:bg-white/10 hover:border-white/20">
+                              <span className="text-sm font-medium text-white/90 whitespace-nowrap">Certificate</span>
+                              <a href="/adobe university hackathon.jpeg" target="_blank" rel="noreferrer" className="bg-[#ff7e5f] text-white text-xs px-5 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#ff6a4a] hover:-translate-y-[1px] hover:shadow-[0_4px_12px_rgba(255,126,95,0.3)] transition-all shrink-0">
+                                Click Here
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       {/* Solution Challenge 2026 */}
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
