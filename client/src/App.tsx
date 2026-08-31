@@ -727,7 +727,7 @@ function App() {
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                           <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/10 bg-white flex items-center justify-center p-1.5">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Adobe_Corporate_logo.svg" alt="Adobe Logo" className="w-full h-full object-contain" />
+                              <img src="https://raw.githubusercontent.com/gilbarbara/logos/main/logos/adobe.svg" alt="Adobe Logo" className="w-full h-full object-contain" />
                             </div>
                             <div>
                               <h3 className="text-2xl font-display text-white mb-1">Adobe University Hackathon</h3>
