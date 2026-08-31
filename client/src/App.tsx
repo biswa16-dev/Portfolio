@@ -725,9 +725,14 @@ function App() {
                       {/* Adobe University Hackathon */}
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                          <div>
-                            <h3 className="text-2xl font-display text-white mb-1">Adobe University Hackathon</h3>
-                            <p className="text-muted">Adobe</p>
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/10 bg-white flex items-center justify-center p-1.5">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Adobe_Corporate_logo.svg" alt="Adobe Logo" className="w-full h-full object-contain" />
+                            </div>
+                            <div>
+                              <h3 className="text-2xl font-display text-white mb-1">Adobe University Hackathon</h3>
+                              <p className="text-muted">Adobe</p>
+                            </div>
                           </div>
                           <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">August 2026</span>
                         </div>
@@ -763,9 +768,14 @@ function App() {
                       {/* Solution Challenge 2026 */}
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                          <div>
-                            <h3 className="text-2xl font-display text-white mb-1">Solution Challenge 2026</h3>
-                            <p className="text-muted">Google for Developers</p>
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/10 bg-white flex items-center justify-center p-1.5">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" className="w-full h-full object-contain" />
+                            </div>
+                            <div>
+                              <h3 className="text-2xl font-display text-white mb-1">Solution Challenge 2026</h3>
+                              <p className="text-muted">Google for Developers</p>
+                            </div>
                           </div>
                           <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">July 2026</span>
                         </div>
@@ -802,9 +812,14 @@ function App() {
                       {/* Code-A-Haunt 3.0 Hackathon */}
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                          <div>
-                            <h3 className="text-2xl font-display text-white mb-1">Code-A-Haunt 3.0</h3>
-                            <p className="text-muted">Coding Blocks</p>
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/10 bg-white flex items-center justify-center p-1.5">
+                              <img src="https://avatars.githubusercontent.com/u/21264426?s=200&v=4" alt="Coding Blocks Logo" className="w-full h-full object-contain" />
+                            </div>
+                            <div>
+                              <h3 className="text-2xl font-display text-white mb-1">Code-A-Haunt 3.0</h3>
+                              <p className="text-muted">Coding Blocks</p>
+                            </div>
                           </div>
                           <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">March 2026</span>
                         </div>
