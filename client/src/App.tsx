@@ -69,8 +69,8 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeRole, setActiveRole] = useState(0);
   const [activeNav, setActiveNav] = useState('Home');
-  const [githubData, setGithubData] = useState({ repos: 42, contributions: '187' });
-  const [leetcodeData, setLeetcodeData] = useState({ easy: 120, medium: 45, hard: 12 });
+  const [githubData, setGithubData] = useState({ repos: 42, contributions: '238' });
+  const [leetcodeData, setLeetcodeData] = useState({ easy: 0, medium: 0, hard: 0 });
   const [activeProjectFilter, setActiveProjectFilter] = useState('All');
   const [activeExperienceTab, setActiveExperienceTab] = useState<'Professional' | 'Hackathons'>('Professional');
   const [currentView, setCurrentView] = useState<'main' | 'experience'>('main');
@@ -146,12 +146,21 @@ function App() {
       } catch (err) {
         console.warn('Public LeetCode API failed, falling back to local server...', err);
         try {
-          // Fallback to our own server proxy
-          const backendUrl = import.meta.env.VITE_API_URL || 'https://portfolio-backend-99dj.onrender.com';
-          const fallbackRes = await fetch(`${backendUrl}/api/leetcode/biswa_17`);
+          // Fallback to another public API since the first one is rate limited/slow
+          const fallbackRes = await fetch(`https://leetcode-api-faisalshohag.vercel.app/biswa_17`);
           const fallbackData = await fallbackRes.json();
           if (fallbackData && fallbackData.easySolved !== undefined) {
             setLeetcodeData({ easy: fallbackData.easySolved, medium: fallbackData.mediumSolved, hard: fallbackData.hardSolved });
+          } else {
+            // If the second one also fails, try the backend if available
+            const backendUrl = import.meta.env.VITE_API_URL;
+            if (backendUrl) {
+              const ownBackendRes = await fetch(`${backendUrl}/api/leetcode/biswa_17`);
+              const ownData = await ownBackendRes.json();
+              if (ownData && ownData.easySolved !== undefined) {
+                setLeetcodeData({ easy: ownData.easySolved, medium: ownData.mediumSolved, hard: ownData.hardSolved });
+              }
+            }
           }
         } catch (fallbackErr) {
           console.error('Both public and local LeetCode fetch failed:', fallbackErr);
