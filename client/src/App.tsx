@@ -862,9 +862,14 @@ function App() {
                       {/* INFERNOVERSE Hackathon */}
                       <div className="p-8 rounded-3xl border border-white/10 bg-black/40 hover:border-white/20 transition-colors">
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                          <div>
-                            <h3 className="text-2xl font-display text-white mb-1">INFERNOVERSE 24 HOUR HACKATHON</h3>
-                            <p className="text-muted">GeeksforGeeks & HiDevs</p>
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/10 bg-black flex items-center justify-center p-1">
+                              <img src="/inferno.png" alt="Infernoverse Logo" className="w-full h-full object-contain" />
+                            </div>
+                            <div>
+                              <h3 className="text-2xl font-display text-white mb-1">INFERNOVERSE 24 HOUR HACKATHON</h3>
+                              <p className="text-muted">GeeksforGeeks & HiDevs</p>
+                            </div>
                           </div>
                           <span className="text-sm text-muted bg-white/5 px-4 py-2 rounded-full border border-white/10">November 2025</span>
                         </div>
