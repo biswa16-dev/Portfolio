@@ -21,20 +21,20 @@ export const projects = [
   },
   {
     id: '2',
-    title: 'Truvix',
-    description: 'Decentralized News Verification Portal.',
-    technologies: ['JavaScript', 'Node.js', 'HTML', 'Vanilla CSS'],
-    image: '/truvix_cover.png',
-    github: 'https://github.com/biswa16-dev/Truvix',
-    live: 'https://truvix-pi.vercel.app/'
-  },
-  {
-    id: '3',
     title: 'StockSense',
     description: 'An immersive Inventory Management System with a beautiful glassmorphism UI, real-time analytics, and seamless stock operations.',
     technologies: ['React', 'Tailwind CSS', 'Firebase', 'Vite'],
     image: '/stocksense.png',
     github: 'https://github.com/biswa16-dev/StockSense',
     live: 'https://stocksenseims.web.app/'
+  },
+  {
+    id: '3',
+    title: 'Truvix',
+    description: 'Decentralized News Verification Portal.',
+    technologies: ['JavaScript', 'Node.js', 'HTML', 'Vanilla CSS'],
+    image: '/truvix_cover.png',
+    github: 'https://github.com/biswa16-dev/Truvix',
+    live: 'https://truvix-pi.vercel.app/'
   }
 ];
