@@ -27,5 +27,14 @@ export const projects = [
     image: '/truvix_cover.png',
     github: 'https://github.com/biswa16-dev/Truvix',
     live: 'https://truvix-pi.vercel.app/'
+  },
+  {
+    id: '3',
+    title: 'StockSense',
+    description: 'An immersive Inventory Management System with a beautiful glassmorphism UI, real-time analytics, and seamless stock operations.',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Vite'],
+    image: 'https://opengraph.githubassets.com/1/biswa16-dev/StockSense',
+    github: 'https://github.com/biswa16-dev/StockSense',
+    live: 'https://stocksenseims.web.app/'
   }
 ];
