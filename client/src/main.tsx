@@ -23,7 +23,7 @@ export const projects = [
     id: '2',
     title: 'StockSense',
     description: 'An immersive Inventory Management System with a beautiful glassmorphism UI, real-time analytics, and seamless stock operations.',
-    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Vite'],
+    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'Socket.io', 'Firebase'],
     image: '/stocksense.png',
     github: 'https://github.com/biswa16-dev/StockSense',
     live: 'https://stocksenseims.web.app/'
