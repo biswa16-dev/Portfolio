@@ -580,11 +580,11 @@ function App() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {filteredProjects.map((project) => (
-                <div key={project.id} className={`group relative rounded-3xl overflow-hidden border border-white/10 bg-black/50 hover:border-white/30 transition-all duration-500 ${project.featured ? 'md:col-span-2' : ''}`}>
-                  <div className={`relative w-full ${project.featured ? 'h-[400px]' : 'h-[250px]'} overflow-hidden`}>
+                <div key={project.id} className={`group relative rounded-3xl overflow-hidden border border-white/10 bg-black/50 hover:border-white/30 transition-all duration-500 ${(project.featured && activeProjectFilter === 'All') ? 'md:col-span-2' : ''}`}>
+                  <div className={`relative w-full ${(project.featured && activeProjectFilter === 'All') ? 'h-[400px]' : 'h-[250px]'} overflow-hidden`}>
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
                     <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                    {project.featured && (
+                    {(project.featured && activeProjectFilter === 'All') && (
                       <div className="absolute top-6 left-6 z-20 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-xs text-white uppercase tracking-wider font-medium">
                         Featured Project
                       </div>
