@@ -15,7 +15,6 @@ export const projects = [
     description: 'A high-fidelity IoT biometric telemetry platform and medical data visualization dashboard with real-time analytics.',
     technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Tailwind CSS', 'ESP32'],
     image: '/cover.png',
-    featured: true,
     github: 'https://github.com/biswa16-dev/EmoSync',
     live: 'https://emo-sync-mu.vercel.app'
   },
