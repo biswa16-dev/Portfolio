@@ -117,7 +117,7 @@ function App() {
   const filteredProjects = projects.filter(project => {
     if (activeProjectFilter === 'All') return true;
     if (activeProjectFilter === 'MERN Stack' && project.title === 'EmoSync') return true;
-    if (activeProjectFilter === 'Full Stack' && (project.title === 'EmoSync' || project.title === 'StockSense')) return true;
+    if (activeProjectFilter === 'Full Stack' && project.title === 'StockSense') return true;
     if (activeProjectFilter === 'Web' && project.title === 'Truvix') return true;
     return false;
   });
