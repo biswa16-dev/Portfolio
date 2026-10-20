@@ -69,7 +69,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeRole, setActiveRole] = useState(0);
   const [activeNav, setActiveNav] = useState('Home');
-  const [githubData, setGithubData] = useState({ repos: 0, contributions: '578' });
+  const [githubData, setGithubData] = useState<{ repos: number | null; contributions: string }>({ repos: null, contributions: '578' });
   const [leetcodeData, setLeetcodeData] = useState({ easy: 0, medium: 0, hard: 0 });
   const [activeProjectFilter, setActiveProjectFilter] = useState('All');
   const [activeExperienceTab, setActiveExperienceTab] = useState<'Professional' | 'Hackathons'>('Professional');
@@ -125,7 +125,6 @@ function App() {
   useEffect(() => {
     const fetchGitHubData = () => {
       if (typeof navigator !== 'undefined' && !navigator.onLine) {
-        setGithubData(prev => ({ ...prev, repos: 0 }));
         return;
       }
 
@@ -140,8 +139,7 @@ function App() {
           }
         })
         .catch(err => {
-          console.error(err);
-          setGithubData(prev => ({ ...prev, repos: 0 }));
+          console.error('GitHub API fetch failed:', err);
         });
     };
 
@@ -189,16 +187,10 @@ function App() {
       fetchLeetCodeData();
     };
 
-    const handleOffline = () => {
-      setGithubData(prev => ({ ...prev, repos: 0 }));
-    };
-
     window.addEventListener('online', handleOnline);
-    window.addEventListener('offline', handleOffline);
 
     return () => {
       window.removeEventListener('online', handleOnline);
-      window.removeEventListener('offline', handleOffline);
     };
   }, []);
 
@@ -546,7 +538,7 @@ function App() {
                 <div className="grid grid-cols-2 gap-4 mt-auto">
                   <div className="p-4 rounded-xl bg-white/5 border border-white/5">
                     <p className="text-muted text-xs uppercase tracking-wider mb-1">Repositories</p>
-                    <p className="text-2xl font-display text-white">{githubData.repos}</p>
+                    <p className="text-2xl font-display text-white">{githubData.repos !== null ? githubData.repos : '—'}</p>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 border border-white/5">
                     <p className="text-muted text-xs uppercase tracking-wider mb-1">Contributions</p>
