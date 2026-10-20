@@ -69,7 +69,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeRole, setActiveRole] = useState(0);
   const [activeNav, setActiveNav] = useState('Home');
-  const [githubData, setGithubData] = useState({ repos: 42, contributions: '578' });
+  const [githubData, setGithubData] = useState({ repos: 0, contributions: '578' });
   const [leetcodeData, setLeetcodeData] = useState({ easy: 0, medium: 0, hard: 0 });
   const [activeProjectFilter, setActiveProjectFilter] = useState('All');
   const [activeExperienceTab, setActiveExperienceTab] = useState<'Professional' | 'Hackathons'>('Professional');
@@ -123,14 +123,27 @@ function App() {
   });
 
   useEffect(() => {
-    fetch('https://api.github.com/users/biswa16-dev')
-      .then(res => res.json())
-      .then(data => {
-        if (data.public_repos !== undefined) {
-          setGithubData(prev => ({ ...prev, repos: data.public_repos }));
-        }
-      })
-      .catch(console.error);
+    const fetchGitHubData = () => {
+      if (typeof navigator !== 'undefined' && !navigator.onLine) {
+        setGithubData(prev => ({ ...prev, repos: 0 }));
+        return;
+      }
+
+      fetch('https://api.github.com/users/biswa16-dev')
+        .then(res => {
+          if (!res.ok) throw new Error('GitHub API request failed');
+          return res.json();
+        })
+        .then(data => {
+          if (data.public_repos !== undefined) {
+            setGithubData(prev => ({ ...prev, repos: data.public_repos }));
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          setGithubData(prev => ({ ...prev, repos: 0 }));
+        });
+    };
 
     const fetchLeetCodeData = async () => {
       try {
@@ -168,7 +181,25 @@ function App() {
       }
     };
 
+    fetchGitHubData();
     fetchLeetCodeData();
+
+    const handleOnline = () => {
+      fetchGitHubData();
+      fetchLeetCodeData();
+    };
+
+    const handleOffline = () => {
+      setGithubData(prev => ({ ...prev, repos: 0 }));
+    };
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
   }, []);
 
   useEffect(() => {
